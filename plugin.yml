@@ -1,0 +1,25 @@
+name: PVPWorld
+author: Dinokiller
+api: [1.0.0]
+version: 1.1.3
+load: POSTWORLD
+main: pvpworld\Main
+
+commands:
+    pvpworld:
+        description: Toggles whether PVP is allowed in a world.
+        usage: "/pvpworld [on|off] [world]"
+        permission: pvpworld.toggle
+  
+permissions:
+    pvpworld:
+        default: op
+        description: "All features for PVPWorld."
+        children:
+            pvpworld.toggle:
+                default: op
+                description: "Toggle whether PVP is enabled."
+            pvpworld.bypass:
+                default: op
+                description: "Attack people even when PVP is disabled. Mainly for operators."
+                                            
