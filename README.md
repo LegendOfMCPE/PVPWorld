@@ -1,4 +1,4 @@
 PVPWorld
 ========
 
-Enable or disable fighting in certain worlds instead of globally.
+Enable or disable fighting in certain worlds only instead of globally.
